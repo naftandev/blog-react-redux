@@ -1,0 +1,40 @@
+.Error {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  justify-content: center;
+  align-items: center;
+  &__image {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 25px;
+    background-image: url('../../statics/error.svg');
+  }
+  &__title {
+    font-size: 3rem;
+    color: red;
+  }
+  &__info {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 5px;
+    padding: 30px;
+    background-color: #ebf7e8;
+    p {
+      font-weight: 700;
+      font-size: 1.6rem;
+    }
+  }
+  &__origin {
+    margin-bottom: 10px;
+    strong {
+      color: red;
+    }
+  }
+
+  &__message {
+    span {
+      font-weight: 400;
+    }
+  }
+}
