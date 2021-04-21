@@ -12,13 +12,6 @@ const Header = () => (
       </figure>
       <span>Blog</span>
     </Link>
-    <nav className='Header__navbar'>
-      <ul>
-        <li>
-          <Link to='/users'>Users</Link>
-        </li>
-      </ul>
-    </nav>
   </header>
 );
 

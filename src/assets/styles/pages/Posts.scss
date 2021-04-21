@@ -1,0 +1,29 @@
+.Posts {
+  display: flex;
+  flex-direction: column;
+  &__details {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+  }
+  &__image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background: url('../../statics/posts.svg') center no-repeat;
+    background-size: contain;
+  }
+  &__title {
+    font-size: 1.8rem;
+    font-style: italic;
+  }
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 100%;
+    max-width: 1500px;
+    margin: 25px auto 0;
+    justify-content: space-around;
+  }
+}

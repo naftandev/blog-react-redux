@@ -1,0 +1,23 @@
+.NotFound {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  &__image {
+    width: 150px;
+    height: 150px;
+    background: url('../../statics/404.svg') center no-repeat;
+    background-size: contain;
+  }
+  &__details {
+    text-align: center;
+    h2 {
+      margin-bottom: 5px;
+      font-size: 4rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+}

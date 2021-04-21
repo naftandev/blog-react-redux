@@ -1,0 +1,40 @@
+@import '../variables.scss';
+
+.Modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba($color: $color-dark, $alpha: 0.5);
+  &__container {
+    width: 90%;
+    max-width: 500px;
+    border-radius: 5px;
+    padding: 30px;
+    position: relative;
+    background-color: $color-light;
+  }
+  &__close {
+    border: none;
+    position: absolute;
+    top: 7.5px;
+    right: 10px;
+    font-size: 2.4rem;
+    opacity: 0.5;
+    outline: none;
+    background: transparent;
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+    }
+  }
+  &__title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+}

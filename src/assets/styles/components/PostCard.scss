@@ -1,0 +1,50 @@
+@import '../variables.scss';
+
+.PostCard {
+  width: 640px;
+  &__post {
+    display: flex;
+    width: 100%;
+    height: 424px;
+    position: relative;
+    background: url('../../statics/blog-image.jpg') center no-repeat;
+    box-shadow: 1.75px 1.75px 10px $color-shadow;
+    svg {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 3rem;
+      opacity: 0.75;
+    }
+    figcaption {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 10px;
+      position: absolute;
+      bottom: 0;
+      color: $color-light;
+      background-color: rgba($color: $color-dark, $alpha: 0.5);
+      h3 {
+        margin-bottom: 5px;
+        font-size: 1.4rem;
+      }
+      p {
+        font-size: 1.2rem;
+        font-style: italic;
+      }
+      button {
+        margin-top: 20px;
+        border: none;
+        align-self: flex-end;
+        outline: none;
+        color: white;
+        background-color: transparent;
+        &:hover {
+          cursor: pointer;
+          text-shadow: 1px 1px 5px $color-shadow;
+        }
+      }
+    }
+  }
+}

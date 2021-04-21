@@ -1,7 +1,6 @@
 import React from 'react';
 
 import '../assets/styles/pages/Error.scss';
-import error from '../assets/statics/error.svg';
 
 const Error = ({ origin, message }) => (
   <main className='Error'>

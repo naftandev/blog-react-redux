@@ -1,0 +1,16 @@
+.Home {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  justify-content: center;
+  align-items: center;
+  &__details {
+    text-align: center;
+  }
+  h1 {
+    font-size: 3.6rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+}

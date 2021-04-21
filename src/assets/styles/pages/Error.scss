@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 .Error {
   display: flex;
   flex-direction: column;
@@ -7,19 +9,20 @@
   &__image {
     width: 150px;
     height: 150px;
-    margin-bottom: 25px;
-    background-image: url('../../statics/error.svg');
+    margin-bottom: 15px;
+    background: url('../../statics/error.svg') center no-repeat;
+    background-size: contain;
   }
   &__title {
     font-size: 3rem;
-    color: red;
+    color: $color-warning;
   }
   &__info {
     width: 100%;
     max-width: 500px;
     border-radius: 5px;
     padding: 30px;
-    background-color: #ebf7e8;
+    background-color: $color-light;
     p {
       font-weight: 700;
       font-size: 1.6rem;
@@ -28,7 +31,7 @@
   &__origin {
     margin-bottom: 10px;
     strong {
-      color: red;
+      color: $color-warning;
     }
   }
 

@@ -1,0 +1,19 @@
+@import '../variables.scss';
+
+.ToDoItem {
+  margin-top: 10px;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    input {
+      border-top: transparent;
+      border-left: transparent;
+      border-bottom: 2px solid $color-dark;
+      border-right: transparent;
+      padding: 5px;
+      font-size: 1.6rem;
+      outline: none;
+    }
+  }
+}
